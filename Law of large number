@@ -1,0 +1,14 @@
+import numpy as np
+from numpy.random import randn #it is a normal distribution
+
+
+N=int(input ("Please keyin the size of sample: ")) #N is size of sample
+counter=0
+
+for i in randn(N):
+    if  i >-1 and i<1:
+        counter=counter+1 #get the number of sample which fallen between -1 and 1
+        
+        
+answer=counter/N #ratio rate of i fallen  between -1 and 1
+print("The standard deviation is: ", answer)
